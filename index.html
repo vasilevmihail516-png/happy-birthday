@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff7fb">
+<title>A little world made just for you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5.14">
+</head>
+<body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="seasonal-layer" id="seasonalLayer" aria-hidden="true"></div>
+<header class="topbar">
+<a class="brand" href="#home">FOR <span>YOU.</span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+<nav id="nav"><a href="#home" class="nav-link active">Главная</a><a href="#lock" class="nav-link">РУМТУР</a><a href="#open-when" class="nav-link">Открой когда...</a><a href="#secret-block" class="nav-link hidden" id="archiveNav">Наступит время</a><a href="#random" class="nav-link">Что-то хорошее</a><a href="#music" class="nav-link">Музыка</a><a href="#birthday" class="nav-link">ДР</a></nav>
+<div class="topbar-actions"><button class="theme-toggle" id="themeToggle" type="button">☾ <span>Ночь</span></button><button class="sound-button" id="soundButton" type="button" aria-label="Перейти к музыке">♫ <span>Музыка</span></button></div>
+</header>
+<main>
+<section class="hero section" id="home">
+<div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span>A LITTLE WORLD MADE JUST FOR YOU</div><h1>Дааровааа,<br><em>Крутая Рита Бро!</em></h1><p class="hero-text">Это тебе. Пользуйся) Тут кое-что для тебя приготовлено. Надеюсь, понравится. А если нет — претензии принимаются, но не рассматриваются.</p><a class="primary-button" href="#lock">Исследовать сайт <span>↗</span></a></div>
+<div class="hero-art" aria-hidden="true">
+<div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+<div class="embrace-stage" aria-hidden="true">
+  <img class="embrace-gif" src="assets/embrace.gif" alt="Два человечка обнимаются" width="240" height="240">
+</div>
+<svg class="hero-flower flower-one" viewBox="0 0 100 100"><g fill="#e8b9d7" fill-opacity=".8"><ellipse cx="50" cy="25" rx="12" ry="24"/><ellipse cx="50" cy="25" rx="12" ry="24" transform="rotate(72 50 50)"/><ellipse cx="50" cy="25" rx="12" ry="24" transform="rotate(144 50 50)"/><ellipse cx="50" cy="25" rx="12" ry="24" transform="rotate(216 50 50)"/><ellipse cx="50" cy="25" rx="12" ry="24" transform="rotate(288 50 50)"/></g><circle cx="50" cy="50" r="10" fill="#f8d98d"/></svg>
+<svg class="hero-flower flower-two" viewBox="0 0 100 100"><g fill="#cdb7ef" fill-opacity=".85"><ellipse cx="50" cy="25" rx="11" ry="23"/><ellipse cx="50" cy="25" rx="11" ry="23" transform="rotate(60 50 50)"/><ellipse cx="50" cy="25" rx="11" ry="23" transform="rotate(120 50 50)"/><ellipse cx="50" cy="25" rx="11" ry="23" transform="rotate(180 50 50)"/><ellipse cx="50" cy="25" rx="11" ry="23" transform="rotate(240 50 50)"/><ellipse cx="50" cy="25" rx="11" ry="23" transform="rotate(300 50 50)"/></g><circle cx="50" cy="50" r="9" fill="#f6d98e"/></svg>
+<span class="spark spark-a">✦</span><span class="spark spark-b">✧</span><span class="spark spark-c">·</span><div class="art-caption">A GIFT, WITH A LITTLE MAGIC</div></div>
+<div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span><span>01 / 07</span></div>
+</section>
+<section class="time-section section" id="our-time">
+  <div class="time-grid">
+    <article class="time-card birthday-count-card">
+      <div class="section-kicker">UNTIL THE SPECIAL DAY</div>
+      <h2>До твоего <em>дня.</em></h2>
+      <div class="time-counter" id="birthdayCountdown" aria-live="off">
+        <div><strong id="bdDays">—</strong><span>дней</span></div><i>:</i>
+        <div><strong id="bdHours">—</strong><span>часов</span></div><i>:</i>
+        <div><strong id="bdMinutes">—</strong><span>минут</span></div><i>:</i>
+        <div><strong id="bdSeconds">—</strong><span>секунд</span></div>
+      </div>
+      <p>10 декабря 2026 · день, который хочется сделать особенным.</p>
+    </article>
+    <article class="time-card friendship-count-card">
+      <div class="section-kicker">SINCE 02 JUNE 2026</div>
+      <h2>Наша <em>история.</em></h2>
+      <div class="friendship-counter" id="friendshipCounter">
+        <strong id="friendDays">—</strong><span>дней дружбы</span>
+      </div>
+      <div class="time-counter compact"><div><strong id="friendHours">—</strong><span>часов</span></div><i>:</i><div><strong id="friendMinutes">—</strong><span>минут</span></div><i>:</i><div><strong id="friendSeconds">—</strong><span>секунд</span></div></div>
+    </article>
+  </div>
+</section>
+<section class="intro section narrow"><div class="section-kicker">A NOTE FOR YOU</div><h2>Здесь кое-что<br><em>для тебя.</em></h2><p>Тут есть двенадцать этапов. Не торопись — просто исследуй всё в своём темпе.</p></section>
+
+<section class="feature-section section" id="lock">
+<div class="section-heading"><div><div class="section-kicker">01 — THE LOCK</div><h2>У каждого секрета<br>есть <em>свой ключ.</em></h2></div><p>Десять испытаний: наблюдательность, логика, поиск подсказок и исследование самого сайта.</p></div>
+<div class="lock-panel">
+<div class="lock-visual"><div class="lock-ring">✧</div><div class="lock-label">CLASSIFIED / FOR RITA ONLY</div><div class="lock-progress"><span id="progressFill"></span></div><div class="progress-caption"><span id="progressText">0 / 10 ОТКРЫТО</span><span>THE RITA PROTOCOL</span></div></div>
+<div class="puzzle-area"><div class="puzzle-top"><span id="levelLabel">LEVEL 01</span><span class="tiny-status">● ENCRYPTED</span></div><h3 id="puzzleTitle">Загружаем загадку…</h3><p id="puzzleQuestion" class="puzzle-question"></p>
+<div class="puzzle-steps" id="puzzleSteps"></div>
+<form id="answerForm" class="answer-form"><input id="answerInput" autocomplete="off" placeholder="Твой ответ..." aria-label="Ответ на загадку"><button class="round-submit" type="submit" aria-label="Проверить ответ">→</button></form><div id="feedback" class="feedback" aria-live="polite"></div><div id="reward" class="reward hidden"></div>
+<div id="finalCodeGate" class="hidden" aria-live="polite">
+  <h3>Последнее слово — не на этом сайте.</h3>
+  <p class="puzzle-question">Когда пройдёшь все двенадцать этапов, попроси у Михаила секретный код. Он скажет его лично — и только тогда откроется последнее послание.</p>
+  <form id="finalCodeForm" class="answer-form">
+    <input id="finalCodeInput" autocomplete="off" placeholder="Секретный код..." aria-label="Секретный код">
+    <button class="round-submit" type="submit" aria-label="Открыть послание">→</button>
+  </form>
+  <div id="finalCodeFeedback" class="feedback" aria-live="polite"></div>
+</div>
+</div>
+<!---</div><p class="fine-print">Прогресс сохраняется в этом браузере. Это игровой секрет, а не защищённое серверное хранилище. <button class="text-reset" id="resetProgress" type="button">Сбросить прохождение для теста</button></p>
+  --> </section>
+
+
+<section class="archive-section section hidden" id="secret-block">
+  <div class="archive-qr-card">
+    <div class="archive-qr-kicker">ONE MORE LITTLE SECRET</div>
+    <h2>Тут есть <em>ещё кое-что.</em></h2>
+    <p class="archive-qr-caption">Наведи камеру и загляни туда, где продолжается история.</p>
+    <div class="archive-qr-wrap"><img class="archive-qr" src="assets/telegram-qr.jpg" alt="QR-код для перехода в Telegram-группу"></div>
+    <div class="archive-qr-foot">TELEGRAM · PRIVATE CORNER ✦</div>
+  </div>
+</section>
+
+<section class="open-section section" id="open-when"><div class="section-heading"><div><div class="section-kicker">02 — OPEN WHEN</div><h2>Открой, <em>когда…</em></h2></div><p>Небольшие письма на разные случаи. Выбирай то, которое подходит именно сейчас.</p></div><div class="letter-grid" id="letterGrid"></div><div class="letter-view hidden" id="letterView"><button class="close-letter" id="closeLetter">×</button><div class="section-kicker">A LITTLE LETTER</div><h3 id="letterTitle"></h3><p id="letterBody"></p><div class="letter-sign">бережно сохранено для тебя ✦</div></div></section>
+
+<section class="random-section section" id="random"><div class="random-orb"><span>✦</span></div><div class="section-kicker">03 — A RANDOM LITTLE THING</div><h2>На случай, если<br>тебе нужно <em>что-то хорошее.</em></h2><p id="compliment" class="compliment">Нажми на кнопку. Здесь есть кое-что приятное.</p><p class="random-note">Иногда достаточно заметить <span class="lock-secret-word">свет</span> среди обычных вещей.</p><button class="primary-button" id="randomButton">Мне нужно что-то хорошее <span>✧</span></button><div class="random-count" id="randomCount">A LITTLE REMINDER · 00</div></section>
+
+<section class="music-section section" id="music"><div class="section-heading"><div><div class="section-kicker">04 — SOUNDTRACK</div><h2>Немного <em>музыки.</em></h2></div><p>Небольшая музыкальная пауза — включай, когда захочется.</p></div>
+<div class="music-player"><div class="music-disc"><span>♫</span></div><div class="music-info"><div class="section-kicker">YOUR LITTLE SOUNDTRACK</div><h3 id="trackName">Picca Fary</h3><p id="trackStatus">Твой трек · готов к воспроизведению</p><div class="track-progress"><span id="trackProgress"></span></div><div class="track-times"><span id="currentTime">00:00</span><span id="duration">00:00</span></div></div><div class="music-controls"><button id="rewindTrack" class="music-control" title="С начала">↺</button><button id="playTrack" class="music-control play" title="Воспроизвести">▶</button><button id="stopTrack" class="music-control" title="Остановить">■</button></div></div><audio id="audioPlayer" src="assets/music/picca-fary.mp3" preload="auto" autoplay></audio>
+</section>
+
+<section class="birthday-section section" id="birthday"><div class="section-kicker">05 — THE DAY</div><div class="birthday-card" id="birthdayCard"><div class="birthday-star">✦</div><div class="birthday-copy"><div class="section-kicker">10 DECEMBER</div><h2>Today is<br><em>your day.</em></h2><p id="birthdayMessage">10 декабря здесь будет твоё поздравление. А самое главное, что в него вложено, — <span class="lock-secret-word">забота</span>.</p><div class="birthday-age" id="birthdayAge">A DATE TO REMEMBER</div><button class="preview-birthday" id="previewBirthday" type="button">Посмотреть поздравление ↗</button></div></div></section>
+<section class="stats-section section" id="our-statistics">
+  <div class="section-heading"><div><div class="section-kicker">06 — OUR STATISTICS</div><h2>Маленькие цифры<br><em>большой истории.</em></h2></div></div>
+  <div class="stats-summary" id="statsSummary" aria-live="polite">
+    <div class="stats-empty">Загружаем наши цифры…</div>
+  </div>
+</section>
+</main>
+<footer><a class="brand" href="#home">FOR <span>RITA.</span></a><span>MADE WITH CARE · 2026</span><a href="#home">BACK TO TOP ↑</a></footer>
+<div class="birthday-overlay hidden" id="birthdayOverlay"><div class="birthday-confetti" aria-hidden="true"></div><div class="birthday-modal"><button class="close-birthday" id="closeBirthday">×</button><div class="birthday-modal-star">✦</div><div class="section-kicker">TODAY IS YOUR DAY</div><h2>С днём<br><em>рождения, Рита!</em></h2><div class="birthday-modal-copy">
+<p>Ну что, ещё один год позади, а ты всё так же умудряешься успевать абсолютно везде, пробовать всё подряд и каким-то образом добиваться практически всего, чего захочешь.</p>
+<p>Я до сих пор не понимаю, откуда у тебя столько энергии. Кажется, у тебя в сутках не 24 часа, а какой-то расширенный тариф. Хотя, зная тебя, даже этого тебе будет мало.</p>
+<p>Отдельно хочется отметить твою любовь к победам. Лазертаг, Зарница, учёба — везде нужно первое место, золотая медаль и желательно без права на апелляцию. Но иногда всё-таки давай другим людям фору. Им тоже хочется почувствовать вкус победы, а то соревнования превращаются в формальность. (Ну это я говорю помоту что так надо, а так кнш пох, JUST DO IT)</p>
+<p>А если серьёзно, я очень рад за тебя. За всё, что у тебя получается, за то, что ты пробуешь новое, не стоишь на месте и добиваешься того, чего хочешь. Даже если ты сама иногда не замечаешь, сколько всего успеваешь.</p>
+<p>И знаешь, я хочу пожелать тебе не просто успехов, достижений и очередных побед. Я хочу, чтобы ты жила именно так, как действительно хочешь сама. Чтобы рядом были нужные люди, чтобы хватало сил на любимые занятия, чтобы было больше поводов радоваться и меньше причин переживать из-за всякой ерунды.</p>
+<p>Не забывай, что тебе необязательно всегда всё успевать, всё решать и обо всём беспокоиться. Иногда можно просто остановиться, отдохнуть, пожаловаться на этот безумный мир и позволить кому-нибудь позаботиться о тебе.</p>
+<p>И напоследок : спасибо тебе за твою заботу, за искренность, за наши совершенно случайные дни, приколы, разговоры и даже за регулярное обеспечение меня едой))))</p>
+<p>Я действительно очень ценю то, что ты есть в моей жизни. И мне хочется, чтобы ты всегда оставалась собой — в любом настроении, в любой ситуации и в любой день.</p>
+<p>С днём рождения! Пусть впереди будет много счастливых моментов, которыми ты будешь по-настоящему довольна.</p>
+<p>И да, сегодня можешь победить во всём. Сегодня тебе разрешается. ❤️</p>
+</div><div class="birthday-modal-age" id="modalAge"></div><button class="primary-button" id="enterGift">Открыть подарок <span>↗</span></button></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="theme.js?v=5.14"></script><script src="stats-data.js?v=5.13"></script><script src="script.js?v=5.14"></script>
+</body></html>
